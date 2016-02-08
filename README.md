@@ -4,12 +4,12 @@ Traduction partielle des chaînes les plus courantes de Phabricator, Maniphest, 
 
 ## Installation
 
-Comme je suis une quiche je n'ai pas trouvé comment installer proprement le fichier comme une nouvelle langue dans le back office. Du coup j'ai remplacé comme un cochon ``PhabricatorVeryWowEnglishTranslation.php`` !
+Simplement:
 
-  1. Renommer ``PhabricatorFrenchTranslation.php`` en ``PhabricatorVeryWowEnglishTranslation.php``.
-  2. Remplacer le fichier dans le dossier ``phabricator/src/infrastructure/internationalization/translation/``.
-  3. Lancer ``arcanist/bin/arc liberate``.
-  4. Dans le profil de l'utilisateur modifiez la langue en choisissant "English (Very Wow)".
+  1. Récupérer ce dépôt ou téléchargez les deux fichiers php
+  2. copier les fichiers php dans le dossier ``${ROOT}/phabricator/src/extensions`` où ${ROOT} est la racine de votre installation
+  2. Lancer ``${ROOT}/arcanist/bin/arc liberate``.
+  3. Dans le profil de l'utilisateur modifiez la langue en choisissant "Français (France)".
 
 ## Extraire les chaînes
 
