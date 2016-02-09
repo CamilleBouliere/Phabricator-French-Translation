@@ -1,0 +1,24 @@
+From b5c815875f0c1ffc52ae42d1a99094ee7da093a7 Mon Sep 17 00:00:00 2001
+From: Ezka <ezka77@hotmail.com>
+Date: Tue, 9 Feb 2016 10:23:15 +0100
+Subject: [PATCH] fr_FR locale case added
+
+---
+ src/internationalization/PhutilTranslator.php | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/internationalization/PhutilTranslator.php b/src/internationalization/PhutilTranslator.php
+index 9f65ca6..afa0740 100644
+--- a/src/internationalization/PhutilTranslator.php
++++ b/src/internationalization/PhutilTranslator.php
+@@ -131,6 +131,7 @@ final class PhutilTranslator extends Phobject {
+ 
+     switch ($this->localeCode) {
+ 
++      case 'fr_FR':
+       case 'en_US':
+       case 'en_GB':
+       case 'en_W*':
+-- 
+2.7.0
+

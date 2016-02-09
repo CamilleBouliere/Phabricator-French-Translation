@@ -4,12 +4,13 @@ Traduction partielle des chaînes les plus courantes de Phabricator, Maniphest, 
 
 ## Installation
 
-Simplement:
+``${ROOT}`` est la racine de votre installation:
 
-  1. Récupérer ce dépôt ou téléchargez les deux fichiers php
-  2. copier les fichiers php dans le dossier ``${ROOT}/phabricator/src/extensions`` où ${ROOT} est la racine de votre installation
-  2. Lancer ``${ROOT}/arcanist/bin/arc liberate``.
-  3. Dans le profil de l'utilisateur modifiez la langue en choisissant "Français (France)".
+  1. Patcher ``libphutil`` pour ajouter la locale fr_FR : 
+    ``cd ${ROOT}/libphutil ; git am --signoff < add_fr_FR_locale.patch``
+  2. copier les fichiers php dans le dossier ``${ROOT}/phabricator/src/extensions`` 
+  3. Lancer ``${ROOT}/arcanist/bin/arc liberate``.
+  4. Dans le profil de l'utilisateur modifiez la langue en choisissant "Français (France)".
 
 ## Extraire les chaînes
 
