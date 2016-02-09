@@ -4,7 +4,7 @@ final class PhabricatorVeryWowEnglishTranslation
   extends PhutilTranslation {
 
   public function getLocaleCode() {
-    return 'en_W*';
+    return 'fr_FR';
   }
 
   protected function getTranslations() {
